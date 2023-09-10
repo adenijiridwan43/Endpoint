@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from rest_framework.response import Response
 from datetime import datetime
 from django.http import JsonResponse
 # Create your views here.
@@ -9,8 +8,8 @@ def My_endpoints(request):
         track = request.GET.get('track', 'backend')
         current_day = datetime.now().strftime('%A')
         utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
-        github_file_url = 'https://github.com/adenijiridwan43/Endpoint-Track/blob/main/api/views.py'
-        github_repo_url = 'https://github.com/adenijiridwan43/Endpoint-Track'
+        github_file_url = 'https://github.com/adenijiridwan43/Endpoint/blob/main/backend/api/views.py'
+        github_repo_url = 'https://github.com/adenijiridwan43/Endpoint'
         status_code = 200
         
         
