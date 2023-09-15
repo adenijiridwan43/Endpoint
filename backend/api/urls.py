@@ -1,6 +1,8 @@
 from django.urls import path
-from . import views
+from .views import UserId, UserName, UserList
 
 urlpatterns = [
-    path('api/', views.My_endpoints.as_view(), name='api_endpoint')
+    path('user/<int:pk>/', UserId.as_view()),
+    path('list/userList/', UserList.as_view()),
+    path('name/<int:pk>/', UserName.as_view()),
 ]

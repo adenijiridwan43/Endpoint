@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
+<<<<<<< HEAD
+=======
+    'rest_framework',
+>>>>>>> e6a2345 (another commit)
 ]
 
 MIDDLEWARE = [
